@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Comment</title>
+</head>
+<body>
+    <body bgcolor="#EAE7DC"></body>
+    <header> <!--Шапка сайта-->
+        <h1>Frontend Разработка</h1>
+    </header>
+<nav>
+    <ul>
+        <li><a href="index.html#introduction">Введение</a></li>
+        <li><a href="index.html#tools">Инструменты</a></li>
+        <li><a href="index.html#languages">Языки</a></li>
+        <li><a href="second_page.html">Перейти на 2ю страницу</a></li>
+        <li><a href="third_page.html">Оставить комментарий</a></li>
+    </ul>
+</nav>
+<hr/>
+
+<main>
+    <h2>Форма для добавления комментария</h2>
+    <form action="https://jsonplaceholder.typicode.com/users" method="post">
+        <label for="first-name">Имя пользователя:</label>
+        <br>
+        <input type="text" id="first-name" name="first-name" required>
+        <br><br>
+        <label for="last-name">Фамилия пользователя:</label>
+        <br>
+        <input type="text" id="last-name" name="last-name" required>
+        <br><br>
+        <label for="email">Электронная почта:</label>
+        <br>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+        <label for="dob">Дата рождения:</label>
+        <br>
+        <input type="date" id="dob" name="dob" required>
+        <br><br>
+        <label for="experience">Количество лет в сфере frontend-разработки:</label>
+        <br>
+        <input type="number" id="experience" name="experience" min="0" required>
+        <br><br>
+        <label for="comment">Комментарий:</label>
+        <br>
+        <textarea cols="73" rows="10" id="comment" name="comment" required></textarea>
+        <br><br>
+        <button type="submit" style="width: 100px; height: 50px; background-color:#D8C3A5;">Отправить</button>
+    </form>
+</main>
+
+<footer> <!--Подвал сайта-->
+    <hr>
+<!--Навигацией по страницам сайта-->
+        <button onclick="document.location='Index.html'" style="width: 200px; height: 50px; background-color:#D8C3A5;">Главная</button>
+        <button onclick="document.location='second_page.html'"style="width: 200px; height: 50px; background-color:#D8C3A5;">История профессии</button>
+        <button onclick="document.location='third_page.html'"style="width: 200px; height: 50px; background-color:#D8C3A5;" >Комментарии</button>
+
+    <p>Связаться с нами</p> <!--Контактная информация-->
+    <address>
+        Телефон горячей линии:
+        <a href="tel:+78007006050">+78007006050</a>
+    </address>
+    <address>
+        Электронная почта:
+        <a href="mailto:IT_Group@mail.ru">IT_Group@mail.ru</a>
+    </address>
+</footer>
+
+</body>
+</html>
